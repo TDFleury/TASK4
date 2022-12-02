@@ -1,288 +1,207 @@
-body 
-{
-background-color: gray;
+
+
+  @media only screen and (min-width: 768px) and (max-width: 600px){
+
+body{background-color: beige;}
+
+.row{display: flex;
+    flex-direction: column;
+       }
+
+.col-1 {width: 16.66%;}
+.col-2 {width: 16.66%;}
+.col-11 {width: 16.66%;}
+.col-12 {width: 16.66%;}
+.col-5 {width: 16.66%;}
+.col-6 {width: 16.66%;}
+
+.en_tete{ padding-top:25px; font-size: 30px;  text-align: center; height:100px; color:rgb(209, 209, 209);}
+.imaj-logo
+{  
+    float:left; margin-left:1px; padding-left:1px;margin-bottom: 10px;margin-top: 1px; width:45px; height:45px;
+}
 
 }
 
-header
-{ 
-   
-    height: 80px;
-    background-color: rgb(43, 22, 22);
-    color:#ffffff;
-   
-    
+
+*{
+box-sizing: border-box;
 }
-/*шапка*/
-.en_tete{
-   
-    opacity: 0.4;
-   
-    padding-left : 150px;
-    font-size: 30px;
-     text-align: center;
+
+header {
+border: 1px solid rgb(85, 82, 82);
+padding: 15px;
+background-color: rgb(43, 22, 22);
 }
-.imaj-logo{
-       width:70px; 
-       height:70px;
-       margin-left:250px;
+.en_tete{ padding-top:25px; font-size: 30px;  text-align: center; height:100px; color:rgb(209, 209, 209);}
+.imaj-logo
+{  
+    float:left; margin-left:10px; padding-left:10px;margin-bottom: 10px;margin-top: 10px; width:65px; height:65px;
 }
-/*таблица*/
+
 .tab , th, td {
-        border: 0.1px solid;
-       width: 20%;
-       
-       padding: 10px;
-  text-align: left;
+  border: 0.1px solid;
+ width: 10%;
+ 
+ padding: 5px;
+text-align: left;
+color :rgb(123, 118, 118);
 }
 .liy1 {
-    background-color: coral;
+background-color: rgb(50, 36, 36);
 }
 .liy2 {
-    background-color: rgb(255, 220, 80);
+background-color: rgb(209, 209, 209);
 }
 .liy3 {
-    background-color: coral;
+background-color:rgb(50, 36, 36);
 }
 .liy4 {
-    background-color: rgb(255, 220, 80);
+background-color: rgb(209, 209, 209);
 }
 .liy5 {
-    background-color: coral;
+background-color:rgb(50, 36, 36);
 }
 .liy6{
-background-color:rgb(255, 220, 80); ;
+background-color:rgb(209, 209, 209);
 }
 .tablo{
-    
-    margin-left: 7px;
-   
+
+margin-left: 3px;
+
 }
 
-nav{
-    
-    width: 960px;  
-    height:30px;
-    margin : 5px;
-    padding : 5px;
-    background-color:black;
-    text-align: center;
-    margin-left: 250px;
-    margin-right: 250px;
-   
+.row::after {
+content: "";
+clear: both;
+display: table;
 }
+
+[class*="col-"] {
+float: left;
+padding: 15px;
+/*border: 1px solid rgb(33, 31, 31);*/
+}
+
+.stil_footer{
+margin-top:10px;
+opacity: 0.6;
+margin-left: 2px;
+font-size: 30px;
+}
+footer
+{
+height: 50px;
+background-color: rgb(43, 22, 22);
+color:#ffffff;
+text-align: left;
+}
+.copyright{
+margin-left: 2px;
+}
+
+body{background-color: rgb(209, 209, 209);
+
+
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+
+body{background-color:rgb(209, 209, 209);}
+
+.imaj-logo
+{  
+    margin-left:250px; padding-left:10px;margin-bottom: 10px;margin-top: 10px; width:65px; height:65px;
+}
+header{background-color: rgb(43, 22, 22); height:100%; width:100%;}
+
+.en_tete{  padding-top:30px; font-size: 40px;  text-align: center; }
+
+nav{
+
+    background-color:black; text-align: center;   
+
+}
+#navigation{height:auto; width:960px; margin-left: 250px; margin-right: 180px;}
 
 
 nav ul
 {
-    display: inline-flex ;
-    list-style: none;
-    color: white;
+display: inline-flex ;    list-style: none;    color: white;
 }
 
 nav ul li
 {
-width:  200px;
-height: 15px;
+width:  200px; height: 15px;
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: rgb(255, 220, 80);
-    opacity: 0.4;
-    margin-top: 30px;
-    
+text-decoration: none;   color: rgb(255, 220, 80);  opacity: 0.4;  margin-top: 30px; font-size:20px;
 }
 a:hover{
-    color:darkgray;
-}
-/*Ссыльки*/
-.lien1{
-    
-    margin-left: 80px;
-    margin-top: 2px;
-}
-.title1{ 
-    margin-left: 5px;
+color:darkgray;
 }
 
-/*Форма*/
-.formulaire{
-    margin-left: 5px;
-    margin-top: 2px;
-    padding-bottom: 50px;
-    
-    
+#lien{width:960px;  margin-left:250px; margin-right:180px;}
+
+#formile{width:960px; margin-left: 250px; margin-right: 180px;}
+
+#tablo{width:960px;  margin-left: 250px; margin-right: 180px;}
+
+
+.tab , th, td {
+border: 0.1px solid;
+width: 20%;
+
+padding: 10px;
+text-align: left;
+color :rgb(123, 118, 118);
 }
-main{
-    width: 960px;
-    background-color: rgb(209, 209, 209);
-    float:inline-end;
-    
-    margin-left: 250px;
-    margin-right: 250px;
-    margin-bottom: 50px;
+.liy1 {
+background-color: rgb(50, 36, 36);
 }
+.liy2 {
+background-color: rgb(209, 209, 209);
+}
+.liy3 {
+background-color:rgb(50, 36, 36);
+}
+.liy4 {
+background-color: rgb(209, 209, 209);
+}
+.liy5 {
+background-color:rgb(50, 36, 36);
+}
+.liy6{
+background-color:rgb(209, 209, 209);
+}
+.tablo{
+
+margin-left: 7px;
+
+}
+
+
 .stil_footer{
-    margin-top:40px;
-    font-size: 40px;
-    opacity: 0.6;
-    margin-left: 5px;
+margin-top:40px;
+font-size: 40px;
+opacity: 0.6;
+margin-left: 5px;
 }
 footer
 {
-
-    height: 80px;
-    background-color: rgb(43, 22, 22);
-   color:#ffffff;
-    text-align: left;
+height: 100px;
+background-color: rgb(43, 22, 22);
+color:#ffffff;
+text-align: left;
 }
 .copyright{
-    margin-left: 5px;
+margin-left: 5px;
 }
 
-/*------------------STYLE POU CLASSES BOOTSTRAP YO---------------------*/
-.container-fluid
-{
-    
-}
 
-@media screen and (max-width:700px  ) 
-{
-    body{
-        background-color:rgb(255, 220, 80);
-    }
-    header
-    { 
-      display: flex;
-      flex-basis: 100%;
-      margin-left:-10px;
-      margin-right:-10px;
-    }
 
-    nav{
-       
-       width: 100%;
-        background-color :rgb(43, 22, 22);
-        height: 75px;
-        
-      
-        margin-left:-10px;
-      
-        
-        text-align: justify;
-    }
-
-    nav ul 
-    {
-        display:flex;
-        flex-direction: column;  
-        margin: 0px;
-       padding-left: 0px;
-       
-    }
-
-    nav ul li 
-    {
-        font-size: 16px;
-       
-      
-    }
-    
-    .en_tete
-    {
-       margin-left: auto;
-       text-align:right;
-        opacity: 0.4;
-    }
-    .imaj-logo
-    {
-          
-       margin-left: -9px;
-        margin-bottom: 10px;
-        margin-top: 10px; 
-        width:65px; 
-        height:65px;
-    }
-
-    .lyenflex{
-       display: flex;
-       flex-direction: column;
-       background-color:rgb(43, 22, 22); 
-       margin-left: -5px;
-       
-    }
-    .lyenflex ul li{ list-style: none;}
-
-    .lyenflex ul li a{
-        text-decoration: none;
-        color: rgb(139, 132, 104);
-    }
-    .lyenflex ul li a:hover{
-        text-decoration: none;
-        color: rgb(231, 237, 232);
-    }
-
-    main{
-       background-color :rgb(255, 220, 80);
-        display: flex;
-        flex-direction: column;
-       width: 100%;
-       float:inline-end; 
-      margin-left: -5px;
-      margin-right: 5px;
-      margin-bottom: -5px;
-    }
-    
-
-    nav ul li a 
-    {
-        text-decoration: none;
-        color:rgb(186, 195, 90);
-        opacity: 0.4;
-        margin-top: 10px;
-    }
-    .tablo
-    {
-        order:2;
-        display:flex;
-        flex-direction: column;
-        background-color: rgb(43, 22, 22);
-        margin-top: 5px;
-        margin-left:-5px;
-       
-    }
-
-    .formulaire{
-     
-        order: 1;
-        background-color: rgb(43, 22, 22);
-       margin-top: -70px;
-        margin-left:0px;
-        padding-bottom: 15px;
-        margin-bottom: 10px;
-        color: rgb(147, 149, 129);
-        
-    }
-
-    .stil_footer{
-       
-        margin-top:100px;
-        font-size: 30px;
-        opacity: 0.6;
-        margin-left: 5px;
-       padding-bottom: auto;
-    }
-    footer
-    {
-    
-        height: 80px;
-        background-color: rgb(43, 22, 22);
-       color:#ffffff;
-        text-align: left;
-    }
-    .copyright{
-        margin-left: 5px;
-    }
-   
 }
